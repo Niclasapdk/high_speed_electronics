@@ -47,6 +47,8 @@ Note: We will use $\mu_r = 2000$.
 a. Draw a magnetic diagram for the core and calculate the necessary path lengths and areas. An area
 increase in the air gap is considered to be $1+\frac{2l}{\sqrt{A}}$.
 
+![magnetic_circuit](magnetic_circuit.jpg)
+
 $$
 A_{air} = 1 + \frac{2l}{\sqrt{A}} \sqrt{A} = 1.13\mathrm{e}{-3} \,\mathrm{m^2} \\
 l_{air} = 0.002 \,\mathrm{m} \\
@@ -102,7 +104,18 @@ The same core as in Exercise 4.2 is now connected to a voltage generator of 220 
 
 a. Determine the necessary flux in the core (middle leg).
 
+$$
+\Phi = \frac{|V|}{\omega N} = 3.5 \mathrm{e}{-3} \,\mathrm{Wb}
+$$
+
 b. Determine B and H in both the middle leg and the air gap.
+
+$$
+B_1 = \frac{\Phi}{A_{air}} = 3.1 \,\mathrm{Wb}{m^2} \\
+B_2 = \frac{\Phi}{A} = 3.5 \,\mathrm{Wb}{m^2} \\
+H_1 = \frac{\Phi R_1}{l_1} = 2464789 \,\mathrm{A_v} \\
+H_2 = \frac{\Phi R_2}{l_2} = 1393 \,\mathrm{A_v}
+$$
 
 ## Exercise 4.4
 
@@ -114,5 +127,17 @@ A coil has the following specifications:
 - The coil is "wrapped in air."
 
 a. Calculate the H-field inside the coil.
+
+Use Ampere's law.
+
+$$
+H = \frac{NI}{l} = 1094 \,\mathrm{\frac{A}{m}}
+$$
+
 b. Calculate the self-induction of the coil.
+
+We use formula from slide 11 (mm4) and $\mu_0$ since coil is wrapped in air.
+$$
+L = \frac{\mu_0 N^2 A}{l} = 4.6\mathrm{e}{-3} \,\mathrm{H}
+$$
 
